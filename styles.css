@@ -46,15 +46,15 @@ body {
 }
 
 .button {
-  background-color: #2547cf;
+  background-color: #020309;
   border: none;
   color: white;
-  padding: 100px 100px;
+  padding: 2px 60px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 45px;
-  margin: 100px 200px;
+  font-size: 14px;
+  margin: 20px 20px;
   cursor: pointer;
 }
   
