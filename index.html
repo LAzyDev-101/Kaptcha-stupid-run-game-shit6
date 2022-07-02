@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" type="module"></script>
+</head>
+<body>
+  <div class="world" data-world>
+    Please enter space to start
+    <div class="score" data-score>0</div>
+    <div class="start-screen" data-start-screen>
+          <p class="button">
+            You can enter space to retry. You still are Bot.
+            <br>
+            <input type="button", onclick="winRoot()", value="I'm lose", style="width: 300px; height: 80px; font-size: 38px;">
+          </p>
+          <script>
+            function winRoot() {
+              alert("You're Human")
+            }
+          </script>
+    </div>
+    <img src="imgs/ground.png" class="ground" data-ground>
+    <img src="imgs/ground.png" class="ground" data-ground>
+    <img src="imgs/prayut_run2-removebg-preview.png" class="dino" data-dino>
+  </div>
+</body>  
+</html>
