@@ -12,15 +12,28 @@
   <div class="world" data-world>  
     <div class="score" data-score>0</div>
     <div class="start-screen" data-start-screen>
-      <img src="imgs/Losememe.jpg" class="cloud">
-      <p class="button">
+      <p class="button" >
         You can enter space to retry. You still are Bot.
         <br>
-        <input type="button", onclick="winRoot()", value="I'm lose", style="width: 300px; height: 80px; font-size: 38px;">
+        <input type="button", onclick="winRoot()", value="I'm lose", style="width: 150px; height: 80px; font-size: 38px;">
+
       </p>
       <script>
         function winRoot() {
-        alert("You're Human")
+          alert('You are Human')
+          show_image("https://dontgetserious.com/wp-content/uploads/2021/10/winner-memes-21.jpeg", 1000, 1000 )
+          window.parent.postMessage("PASS", 'http://localhost:8080');
+        }
+
+        function show_image(src, width, height, alt) {
+          var img = document.createElement("img");
+          img.add
+          img.src = src;
+          img.width = width;
+          img.height = height;
+          img.classList.add('img-show')
+        
+          document.body.appendChild(img);
         }
       </script>
     </div>
@@ -28,5 +41,5 @@
     <img src="imgs/ground.png" class="ground" data-ground>
     <img src="imgs/prayut_run2-removebg-preview.png" class="dino" data-dino>
   </div>
-</body>  
+</body>
 </html>

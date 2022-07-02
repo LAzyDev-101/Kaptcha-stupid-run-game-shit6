@@ -80,3 +80,9 @@ body {
   height: 30%;
   bottom: 0;
 }
+
+.img-show{
+  position: absolute;
+  top: 0;
+  right: 50;
+}
